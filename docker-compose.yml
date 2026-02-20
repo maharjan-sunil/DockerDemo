@@ -1,0 +1,30 @@
+#version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_container
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Pass123   # SQL Authentication password
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    restart: always
+
+  webapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webapi_container
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=Tims;User Id=sa;Password=YourStrong@Pass123;TrustServerCertificate=True;
+    depends_on:
+      - sqlserver
+    ports:
+      - "5000:80"
+    restart: always
+
+volumes:
+  sql_data:

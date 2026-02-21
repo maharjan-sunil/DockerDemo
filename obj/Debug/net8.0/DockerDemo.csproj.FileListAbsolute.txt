@@ -120,6 +120,7 @@ C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.AssemblyI
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.csproj.CoreCompileInputs.cache
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.sourcelink.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

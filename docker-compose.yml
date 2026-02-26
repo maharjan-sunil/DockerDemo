@@ -23,7 +23,7 @@ services:
     depends_on:
       - sqlserver
     ports:
-      - "5000:80"
+      - "5001:8080"
     restart: always
 
 volumes:

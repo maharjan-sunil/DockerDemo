@@ -120,6 +120,7 @@ C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.AssemblyI
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.csproj.CoreCompileInputs.cache
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.sourcelink.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -129,10 +130,10 @@ C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\staticwebassets.buil
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.csproj.Up2Date
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.dll
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\refint\DockerDemo.dll
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.pdb
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.genruntimeconfig.cache
 C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\ref\DockerDemo.dll
-C:\Users\Sunil\Downloads\Docker\DockerDemo\obj\Debug\net8.0\DockerDemo.sourcelink.json

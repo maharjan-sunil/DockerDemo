@@ -1,4 +1,5 @@
 using DockerDemo.Data;
+using DockerDemo.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,14 +19,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// to add all the DI 
+builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+//{
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    // Points to the generated JSON file
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+
+    // This makes Swagger available at the root URL (e.g., http://localhost:5062/)
+    options.RoutePrefix = string.Empty;
+});
+//}
 
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
@@ -53,6 +63,12 @@ if (app.Environment.IsDevelopment())
 //    return forecast;
 //})
 //.WithName("GetWeatherForecast");
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+//    db.Database.Migrate(); // creates tables if they don't exist
+//}
 
 app.MapControllers();
 app.Run();

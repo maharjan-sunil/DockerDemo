@@ -8,7 +8,7 @@ namespace DockerDemo.Docker.Interface
         public Task<ActionResult<IEnumerable<Store>>> GetStores();
         public Task AddStore(Store store);
         public Task DeleteStore(int id);
-        public Task<ActionResult<IEnumerable<Store>>> GetStoreById(int id);
+        public Task<ActionResult<IEnumerable<Store>>> GetStoreByName(string storeName);
         public Task UpdateStore(Store store);
     }
 }

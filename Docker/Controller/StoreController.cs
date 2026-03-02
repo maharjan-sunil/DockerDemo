@@ -28,6 +28,13 @@ namespace DockerDemo.Docker.Controller
             return Ok();
                 
         }
+
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<Store>>> GetStoreByName(String storeName)
+        {
+            return await _service.GetStoreByName(storeName);
+
+        }
     }
 }
 

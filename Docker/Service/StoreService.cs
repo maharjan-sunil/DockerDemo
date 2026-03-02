@@ -33,9 +33,19 @@ namespace DockerDemo.Docker.Service
             return await _context.Stores.ToListAsync();
         }
 
-        public Task<ActionResult<IEnumerable<Store>>> GetStoreById(int id)
+        public async Task<ActionResult<IEnumerable<Store>>> GetStoreByName(string storeName)
         {
-            throw new NotImplementedException();
+            IEnumerable<Store> filteredStores;
+            if (string.IsNullOrEmpty(storeName))
+            {
+                return await _context.Stores.ToListAsync();
+            }
+
+            // Use Where() with Contains() for 'like' functionality
+            // This translates to a SQL LIKE '%...%' query
+            return await _context.Stores
+                .Where(s => s.Name.Contains(storeName))
+                .ToListAsync();
         }
 
         public Task UpdateStore(Store store)

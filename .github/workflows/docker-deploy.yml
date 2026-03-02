@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -25,15 +24,15 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/dockerdemo:${{ github.sha }} 
-deploy:
+          docker push ${{ secrets.DOCKER_USERNAME }}/dockerdemo:${{ github.sha }}
+
+  deploy:  # <--- This must be aligned exactly with "build:"
     runs-on: ubuntu-latest
-    needs: build  # Only runs if the build succeeds
+    needs: build
     steps:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Dockerdemo'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          # This tells Azure exactly which image + SHA tag to pull
           images: '${{ secrets.DOCKER_USERNAME }}/dockerdemo:${{ github.sha }}'

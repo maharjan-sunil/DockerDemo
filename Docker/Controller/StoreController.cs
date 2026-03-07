@@ -21,7 +21,6 @@ namespace DockerDemo.Docker.Controller
         {
             return await _service.GetStores();
         }
-
        
         [HttpPost]
         [Authorize]
